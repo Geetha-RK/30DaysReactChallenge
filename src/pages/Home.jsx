@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div>
         <ul>
-            <li><Link to='/day1'>Day1</Link></li>
+            <li><Link to='/day1'> Day 1: Todo List App</Link></li>
             <li>Day2</li>
         </ul>
     </div>
