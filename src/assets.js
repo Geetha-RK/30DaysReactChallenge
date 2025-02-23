@@ -4,6 +4,7 @@ import checked from './assets/Day1/checked.png'
 import unchecked from './assets/Day1/unchecked.png'
 import todoicon from './assets/Day1/icon.png'
 
+import sunset from './assets/Day2/sunset.jpg'
 import clear from './assets/Day2/clear.png'
 import cloud from './assets/Day2/cloud.png'
 import drizzle from './assets/Day2/drizzle.png'
@@ -28,7 +29,8 @@ export const day2imgs = {
   rain,
   search,
   snow,
-  wind
+  wind,
+  sunset
 }
 export const project = [
     {
@@ -41,6 +43,6 @@ export const project = [
       day:'Day2',
       title:'Weather App',
       description:'Fetch weather data from a public OpenWeatherMap API',
-      Concepts:'Axios API, state management, conditional rendering, react-toastify',
+      Concepts:'Axios API, state management, conditional rendering',
     }
   ];
