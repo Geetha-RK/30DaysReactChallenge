@@ -32,15 +32,19 @@ cd 30daysReactChallenge
     1. To-Do List App
 A simple app to add, edit, and delete tasks.
 Concepts: State management, list rendering, events.
+
 2. Weather App
-Fetch weather data from a public API like OpenWeatherMap.
-Concepts: Fetch API, state management, conditional rendering.
+Fetch weather data from a public OpenWeatherMap API.
+Concepts: Fetch API, state management, conditional rendering, react toastify.
+
 3. Counter App
 Create a counter with increment, decrement, and reset buttons.
 Concepts: useState, event handling.
+
 4. Digital Clock
 Display the current time that updates every second.
 Concepts: useState, useEffect, setInterval.
+
 5. Recipe Search App
 Search for recipes based on ingredients using an API like Edamam or Spoonacular.
 Concepts: API requests, mapping data, conditional rendering.
