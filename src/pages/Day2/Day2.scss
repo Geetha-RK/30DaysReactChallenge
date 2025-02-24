@@ -21,10 +21,10 @@
             margin: 3rem;
             padding: 1rem;
             backdrop-filter: blur(16px) saturate(176%);
-    -webkit-backdrop-filter: blur(16px) saturate(176%);
-    background-color: rgba(32, 178, 170, 0.17);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
+            -webkit-backdrop-filter: blur(16px) saturate(176%);
+            background-color: rgba(32, 178, 170, 0.17);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.125);
         }
         &__search-box{
             display: flex;

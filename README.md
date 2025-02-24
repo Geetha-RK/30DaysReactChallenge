@@ -37,9 +37,9 @@ Concepts: State management, list rendering, events.
 Fetch weather data from a public OpenWeatherMap API.
 Concepts: Fetch API, state management, conditional rendering, react toastify.
 
-3. Counter App
-Create a counter with increment, decrement, and reset buttons.
-Concepts: useState, event handling.
+3. BMI calculator App
+Create the bmi calculator app
+Concepts: useState, conditional rendering, DOM manipulation, event handling.
 
 4. Digital Clock
 Display the current time that updates every second.
