@@ -1,11 +1,23 @@
 .project-card{
-    background-color:cadetblue;
-    color: darkmagenta;
+    background-color:rgb(50, 180, 185);
+    color: rgb(7, 58, 32);
     text-decoration: none;
     width: 25rem;
-    height: 15rem;
+    height: 13rem;
     padding: 1.5rem;
     margin: 1rem;
     cursor: pointer;
     border-radius: 2rem;
+
+    &__hr{
+        color: aqua;
+        
+    }
+    &__details{
+        padding: 0 1.5rem;
+    }
+}
+.project-title{
+    display: flex;
+    justify-content: space-evenly;
 }
