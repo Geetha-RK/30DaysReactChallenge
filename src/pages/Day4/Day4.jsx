@@ -2,6 +2,9 @@
 import { Link } from 'react-router-dom'
 import './Day4.scss'
 import { useEffect, useState } from 'react';
+// Import React Toastify
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Day4 = () => {
   const [currentTime, setCurrentTime] = useState(new Date().toLocaleTimeString());
@@ -21,7 +24,29 @@ const Day4 = () => {
     return () => clearInterval(interval);
   }, []);
 
-  useEffect(()=>{},[])
+   useEffect(()=>{
+    let interval;
+    if (isTimerRunning) {
+      interval = setInterval(() => {
+        setTimer((prevState) => {
+          if (prevState.minutes === 0 && prevState.seconds === 0) {
+            clearInterval(interval); // Clear interval when the timer reaches 0
+            toast.error("Time's up")
+            setIsTimerRunning(false); // Stop the timer after time is up
+            return prevState;
+          }
+
+          if (prevState.seconds === 0 && prevState.minutes > 0) {
+            return { minutes: prevState.minutes - 1, seconds: 59 }; // Decrease minute and reset seconds
+          }
+
+          return { ...prevState, seconds: prevState.seconds - 1 }; // Decrease seconds
+        });
+      }, 1000);
+    }
+    return () => clearInterval(interval); // Cleanup interval
+  }, [isTimerRunning, timer]);
+
 
   const getTimeForZone = (timezone) => {
     return new Date().toLocaleString('en-US', {
@@ -39,15 +64,19 @@ const Day4 = () => {
   const [utcTime, setUtcTime] = useState(getTimeForZone('UTC'));
 
 
-  const handleRestart = (e) => {
+  const handleStart = (e) => {
     const minutes = parseInt(inputTime, 10); // Parse the input time to integer
     if (!isNaN(minutes) && minutes > 0) {
       setTimer({ minutes: minutes, seconds: 0 }); 
       setIsTimerRunning(true);
       setInputTime("");
     } else {
-      alert("Please enter a valid number of minutes");
+      toast.error("Please enter a valid number of minutes")
     }
+  }
+  const handleRestart = (e) => {
+    setInputTime("");
+    setTimer({minutes:0,seconds:0});
   }
   const handleStop = (e) => {
     setIsTimerRunning(false);
@@ -85,11 +114,13 @@ const Day4 = () => {
                     min="1" 
                   />
               <div>
-                <button className="clock__button" onClick={handleRestart}>Start Timer</button>
+                <button className="clock__button" onClick={handleStart}>Start Timer</button>
                 {isTimerRunning && <button className="clock__button" onClick={handleStop}>Stop</button>}
+                {!isTimerRunning && <button className="clock__button" onClick={handleRestart}>Restart</button>}
               </div>
             </div>
           </div>
+          <ToastContainer position="bottom-center" />
         </div>
     </div>
   )

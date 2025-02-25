@@ -54,7 +54,7 @@ export const project = [
     {
       day:'Day4',
       title:'Digital Clock App',
-      description:' A Digital Clock app in dark/ light mode with timer and alarm functionality',
+      description:' Display the current time that updates every second for different time zones, Display the timer with stop and restart options',
       Concepts:'state management, useEffect, and setInterval',
     }
   ];
