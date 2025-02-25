@@ -42,7 +42,7 @@ Create the bmi calculator app
 Concepts: useState, conditional rendering, DOM manipulation, event handling.
 
 4. Digital Clock
-Display the current time that updates every second.
+Display the current time that updates every second for different time zones, Display the timer with stop and restart options.
 Concepts: useState, useEffect, setInterval.
 
 5. Recipe Search App

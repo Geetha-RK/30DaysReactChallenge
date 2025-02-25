@@ -4,7 +4,12 @@
     justify-content: center;
     height: 100vh;
     background-color: aquamarine;
+    flex-wrap: wrap;
+    padding-top: 3rem;
 }
 .project-link{
     text-decoration: none;
+}
+.title{
+    color: rgb(7, 58, 32);
 }

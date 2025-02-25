@@ -48,7 +48,13 @@ export const project = [
     {
       day:'Day3',
       title:'BMI Calculator App',
-      description:'Create the BMI calculator app',
+      description:'',
       Concepts:'useState, conditional rendering, DOM manipulation, event handling.',
+    },
+    {
+      day:'Day4',
+      title:'Digital Clock App',
+      description:' Display the current time that updates every second for different time zones, Display the timer with stop and restart options',
+      Concepts:'state management, useEffect, and setInterval',
     }
   ];
