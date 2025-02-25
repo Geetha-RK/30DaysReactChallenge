@@ -45,10 +45,10 @@ export const project = [
       description:'Fetch weather data from a public OpenWeatherMap API',
       Concepts:'Axios API, state management, conditional rendering',
     },
-    // {
-    //   day:'Day3',
-    //   title:'BMI Calculator App',
-    //   description:'Create the BMI calculator app',
-    //   Concepts:'useState, conditional rendering, DOM manipulation, event handling.',
-    // }
+    {
+      day:'Day3',
+      title:'BMI Calculator App',
+      description:'Create the BMI calculator app',
+      Concepts:'useState, conditional rendering, DOM manipulation, event handling.',
+    }
   ];
