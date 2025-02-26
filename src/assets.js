@@ -14,6 +14,7 @@ import search from './assets/Day2/search.png'
 import snow from './assets/Day2/snow.png'
 import wind from './assets/Day2/wind.png'
 
+import bg from './assets/Day5/bg.png'
 export const images = {
     todo,
     day1,
@@ -31,6 +32,9 @@ export const day2imgs = {
   snow,
   wind,
   sunset
+}
+export const day5img = {
+  bg,
 }
 export const project = [
     {
@@ -56,5 +60,11 @@ export const project = [
       title:'Digital Clock App',
       description:' Display the current time that updates every second for different time zones, Display the timer with stop and restart options',
       Concepts:'state management, useEffect, and setInterval',
+    },
+    {
+      day:'Day5',
+      title:'Recipe Card Generator',
+      description:'Used spoonacular API to Create Recipe Card based.',
+      Concepts: 'API requests, Axios, mapping data, useRef hook, state management, conditional rendering.',
     }
   ];

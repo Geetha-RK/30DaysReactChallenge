@@ -1,4 +1,4 @@
-// import React from 'react'
+
 import { Link } from 'react-router-dom'
 import './Day4.scss'
 import { useEffect, useState } from 'react';
