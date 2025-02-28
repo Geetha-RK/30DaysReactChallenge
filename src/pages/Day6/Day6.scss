@@ -1,34 +1,58 @@
 .jokes{
-    // background-image: url('../../assets/Day6/bg6.jpg');
-    background-color: aqua;
+    background-image: url('../../assets/Day6/bg6.jpg');
+    // background-color: rgb(255, 247, 0);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 
     &__container{
         display: flex;
         align-items: center;
         flex-direction: row;
         margin: 5rem;  
-        background-color: azure;
+        background-color:rgb(49, 176, 95);
+        width: 50%;
+        margin: 2rem;
+        border-radius: 5rem;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        // text-transform:uppercase;
+       color: rgb(116, 25, 9);
+       
     }
     &__category-list{
         list-style: none;
         padding: 5px;
         cursor: pointer;
+        text-transform: capitalize;
+        color:green;
+        font-weight: bolder;
+        font-size: large;
+        
+    }
+    &__heading{
+        padding-left: 2rem;
+        text-transform: uppercase;
     }
     &__category{
-        background-color: burlywood;
-        width: 20%;
+        background-color:greenyellow;
+        width: 30%;
         display: flex;
         align-items: center;
         flex-direction: column;
         justify-content: center;
+        border-top-left-radius: 5rem;
+        border-bottom-left-radius: 5rem;
+
         
     }
     &__random{
-        
-       
+            padding: 3rem;
+            width: 60%;
+            line-height: 2rem;
+            color:whitesmoke;
     }
 }

@@ -45,7 +45,7 @@ const Day6 = () => {
             </div>
             <div className="jokes__container">
                 <div className='jokes__category'>
-                    <h3>Joke Categories:</h3>
+                    <h3 className='jokes__heading'>Joke Categories:</h3>
                     {categories.length > 0 ? (
                         <ul>
                             {categories.map((category, index) => (
@@ -69,7 +69,7 @@ const Day6 = () => {
                     ) : (
                         jokes ? (
                             <>
-                                <h3>Random Joke:</h3>
+                                <h3 >Chuck Norris Joke:</h3>
                                 <p>{jokes.value}</p>
                             </>
                         ) : (
