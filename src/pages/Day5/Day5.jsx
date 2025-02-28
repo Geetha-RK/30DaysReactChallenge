@@ -50,7 +50,7 @@ const Day5 = () => {
     formData.append("backgroundColor", "#FFB6C1"); // White background color
     formData.append("fontColor", "#333333"); // Dark font color
     formData.append("author",author);
-    // Append image file if uploaded
+    
     if (imageRef.current.files[0]) {
       formData.append("image", imageRef.current.files[0]); // Append the image file
     }
@@ -90,7 +90,7 @@ const Day5 = () => {
               <label  className="recipe__label" htmlFor="instructions">  Enter the Instructions(one per line):  
               </label>
               <textarea className="recipe__input recipe__textarea" type="text" name="instructions" id="instructions" ref={instructionsRef} placeholder="e.g. Mix all ingredients, bake for 30 minutes."/>
-              <label htmlFor="imgupload">Upload Recipe Image</label>
+              <label className="recipe__label" htmlFor="imgupload">Upload Recipe Image</label>
               <input 
                 className="recipe__input"
                 type="file"

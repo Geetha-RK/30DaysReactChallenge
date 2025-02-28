@@ -15,6 +15,7 @@ import snow from './assets/Day2/snow.png'
 import wind from './assets/Day2/wind.png'
 
 import bg from './assets/Day5/bg.png'
+import bg6 from './assets/Day6/bg6.jpg'
 export const images = {
     todo,
     day1,
@@ -35,6 +36,9 @@ export const day2imgs = {
 }
 export const day5img = {
   bg,
+}
+export const day6img = {
+  bg6,
 }
 export const project = [
     {
@@ -64,7 +68,13 @@ export const project = [
     {
       day:'Day5',
       title:'Recipe Card Generator',
-      description:'Used spoonacular API to Create Recipe Card based.',
+      description:'Used spoonacular API to Create Recipe Card.',
       Concepts: 'API requests, Axios, mapping data, useRef hook, state management, conditional rendering.',
+    },
+    {
+      day:'Day6',
+      title:'Random Joke Generator',
+      description:'Fetch random jokes from an API and display them.',
+      Concepts: 'useEffect, API calls, displaying dynamic data.',
     }
   ];
