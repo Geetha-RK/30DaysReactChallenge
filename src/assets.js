@@ -76,5 +76,11 @@ export const project = [
       title:'Random Joke Generator',
       description:'Fetch random jokes from an API and display them.',
       Concepts: 'useEffect, API calls, displaying dynamic data.',
-    }
+    },
+    {
+      day:'Day7',
+      title:'Voice Calculator',
+      description:'Build a basic voice calculator with buttons for operations like add, subtract, multiply, and divide.',
+      Concepts: 'state management, event handling.',
+    },
   ];
