@@ -1,17 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
-const VoiceInput = ({ onVoiceInput }) => {
+const VoiceInput = ({ onVoiceInput, onEqualsCommand }) => {
   const [isListening, setIsListening] = useState(false);
-  const [transcript, setTranscript] = useState('');
-  
-  // Create a SpeechRecognition instance
+  const [transcript, setTranscript] = useState("");
+
   const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
   const recognition = new SpeechRecognition();
 
-  // Setup recognition properties
-  recognition.continuous = true;  // Keep listening until stopped
-  recognition.lang = 'en-US';  // You can change this to the language you need
-  recognition.interimResults = true; // Show results as the user is speaking
+  recognition.continuous = true;
+  recognition.lang = "en-US";
+  recognition.interimResults = true;
 
   useEffect(() => {
     if (isListening) {
@@ -23,7 +21,13 @@ const VoiceInput = ({ onVoiceInput }) => {
     recognition.onresult = (event) => {
       const currentTranscript = event.results[event.resultIndex][0].transcript;
       setTranscript(currentTranscript);
-      onVoiceInput(currentTranscript);  // Pass the transcript to parent component
+      console.log("Recognized Text: ", currentTranscript); // Debugging line
+      onVoiceInput(currentTranscript);
+
+      if (currentTranscript.toLowerCase().includes("equals") || currentTranscript.toLowerCase().includes("equal")) {
+        console.log("Equals command detected"); 
+        onEqualsCommand();
+      }
     };
 
     recognition.onerror = (event) => {
@@ -31,20 +35,24 @@ const VoiceInput = ({ onVoiceInput }) => {
     };
 
     return () => {
-      recognition.stop();  
+      recognition.stop();
     };
-  }, [isListening, onVoiceInput]);
+  }, [isListening, onVoiceInput, onEqualsCommand]);
 
   const toggleListening = () => {
-    setIsListening(!isListening);
+    if (!isListening) {
+        setIsListening(true);
+    } else {
+        setIsListening(false);
+    }
   };
 
   return (
     <div>
-      <button onClick={toggleListening}>
-        {isListening ? 'Stop Listening' : 'Start Listening'}
+      <button className="recipe__button" onClick={toggleListening}>
+        {isListening ? "Stop Listening" : "Start Listening"}
       </button>
-      <p>Recognized Text: {transcript}</p>
+      <p style={{ color: "whitesmoke" }}>Recognized Text: {transcript}</p>
     </div>
   );
 };

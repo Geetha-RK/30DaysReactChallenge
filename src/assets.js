@@ -79,8 +79,8 @@ export const project = [
     },
     {
       day:'Day7',
-      title:'Voice Calculator',
-      description:'Build a basic voice calculator with buttons for operations like add, subtract, multiply, and divide.',
+      title:'Calculator',
+      description:'Build a basic calculator with buttons for operations like add, subtract, multiply, and divide.',
       Concepts: 'state management, event handling.',
     },
   ];
