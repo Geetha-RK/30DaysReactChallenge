@@ -76,5 +76,17 @@ export const project = [
       title:'Random Joke Generator',
       description:'Fetch random jokes from an API and display them.',
       Concepts: 'useEffect, API calls, displaying dynamic data.',
-    }
+    },
+    {
+      day:'Day7',
+      title:'Calculator',
+      description:'Build a basic calculator with buttons for operations like add, subtract, multiply, and divide.',
+      Concepts: 'state management, event handling.',
+    },
+    {
+      day:'Day8',
+      title:'Color Picker',
+      description:'A tool where users can select colors from a color palette or input a color code to change the background.',
+      Concepts: 'State management, dynamic styling.',
+    },
   ];
