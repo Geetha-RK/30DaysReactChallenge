@@ -95,4 +95,10 @@ export const project = [
       description:'Check the strength of a password based on length, numbers, and special characters.',
       Concepts: 'Form handling, regular expressions.',
     },
+    {
+      day:'Day10',
+      title:'Budget Tracker',
+      description:'Track expenses and income, and calculate the balance.',
+      Concepts: 'useState, input handling, list rendering.',
+    },
   ];
