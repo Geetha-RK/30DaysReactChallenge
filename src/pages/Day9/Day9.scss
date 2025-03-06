@@ -1,0 +1,128 @@
+.pwd-checker{
+    height: 100vh;
+    background-color: rgb(62, 111, 112);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &__container{
+        width:80%;
+        height: 60%;
+        background-color: aliceblue;
+        margin: 3rem;
+        border-radius: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    &__input{
+        padding: 10px;
+        width: 80%;
+        margin-top: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+    }
+    &__label{
+        font-size: medium;
+        font-weight: 800;
+        font-style: italic;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(80, 71, 71);
+      }
+      &__show{
+        padding-left: 1rem;
+      }
+      &__form{
+        padding: 1rem;
+        width: 70%;
+      }
+
+}
+
+
+.container {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+  }
+  
+
+
+.progress-container {
+    width: 30%;
+    height: 25px;
+    background-color: #e0e0e0;
+    border-radius: 12px;
+    margin-top: 10px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  .progress-bar {
+    height: 100%;
+    border-radius: 12px;
+    text-align: center;
+    line-height: 25px;
+    color: white;
+    font-weight: bold;
+    transition: width 0.3s ease;
+    &__strength{
+        font-size: larger;
+        font-weight: 500;
+    }
+  }
+
+  .toggle-password {
+    height: 1rem;
+    cursor: pointer;
+    
+}
+  
+  .weak {
+    background-color: #ff4d4d;
+  }
+  
+  .moderate {
+    background-color: #ffcc00;
+  }
+  
+  .good {
+    background-color: #66cc66;
+  }
+  
+  .strong {
+    background-color: #4CAF50;
+  }
+  
+
+  .criteria-checklist{
+    padding: 5px;
+
+    &__valid{
+        color: #4CAF50;
+    }
+
+    &__invalid{
+        color: #f44336;
+    }
+  }
+
+  .status {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+
+    &__error {
+        color: #d9534f;  
+      }
+      
+     &__safe {
+        color: #5bc0de;  
+      }
+  }
+  
