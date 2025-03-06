@@ -86,7 +86,13 @@ export const project = [
     {
       day:'Day8',
       title:'Color Picker',
-      description:'A tool where users can select colors from a color palette or input a color code to change the background.',
-      Concepts: 'State management, dynamic styling.',
+      description:'A tool that allows users to pick colors from a color palette. Based on the chosen color and mode, the app dynamically fetches and displays a matching color scheme in real-time',
+      Concepts: 'State management, dynamic styling, API calls',
+    },
+    {
+      day:'Day9',
+      title:'Password Strength Checker',
+      description:'Check the strength of a password based on length, numbers, and special characters.',
+      Concepts: 'Form handling, regular expressions.',
     },
   ];

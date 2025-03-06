@@ -98,7 +98,7 @@ const Day8 = () => {
                   key={index}
                   className="color-scheme__color"
                   style={{
-                    backgroundColor: `${color.hex.value}`, // Set background color using the hex value
+                    backgroundColor: `${color.hex.value}`, 
                   }}
                 >
                   <p>{color.hex.value}</p>
