@@ -3,6 +3,8 @@ import day1 from './assets/Day1/day1.PNG'
 import checked from './assets/Day1/checked.png'
 import unchecked from './assets/Day1/unchecked.png'
 import todoicon from './assets/Day1/icon.png'
+import trash from './assets/Day11/trash.svg'
+import edit from './assets/Day11/edit.svg'
 
 import sunset from './assets/Day2/sunset.jpg'
 import clear from './assets/Day2/clear.png'
@@ -39,6 +41,11 @@ export const day5img = {
 }
 export const day6img = {
   bg6,
+}
+
+export const day11img = {
+  trash,
+  edit,
 }
 export const project = [
     {
@@ -101,4 +108,13 @@ export const project = [
       description:'Track expenses and income, and calculate the balance.',
       Concepts: 'useState, input handling, list rendering.',
     },
+    {
+      day:'Day11',
+      title:'Notes App',
+      description:'Create a note-taking app that allows adding, editing, and deleting notes.',
+      Concepts: 'State management, CRUD operations.',
+    },
   ];
+
+
+ 
