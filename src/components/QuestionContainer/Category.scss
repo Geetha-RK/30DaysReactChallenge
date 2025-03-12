@@ -1,0 +1,27 @@
+.category__container {
+    margin: 20px;
+  }
+  
+  .category__container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .category__item {
+    padding: 8px 12px;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 5px 0;
+    transition: background-color 0.3s;
+  }
+  
+  .category__item:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .category__item:active {
+    background-color: #d0d0d0;
+  }
+  

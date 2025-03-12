@@ -1,0 +1,64 @@
+.trivia{
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: radial-gradient(circle, rgb(255, 255, 255), rgb(226, 104, 128));
+
+    &__container{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 3rem;
+        padding: 2rem;
+        width: 80%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        
+        backdrop-filter: blur(10px) saturate(94%);
+        -webkit-backdrop-filter: blur(10px) saturate(94%);
+        background-color: rgba(226, 105, 128, 0.58);
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.125);
+    }
+    &__question{
+        backdrop-filter: blur(10px) saturate(94%);
+        -webkit-backdrop-filter: blur(10px) saturate(94%);
+        background-color: rgba(70, 64, 65, 0.25);
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.125);
+        color: whitesmoke;
+        font-size: x-large;
+        font-weight: 500;
+        line-height: 160%;
+        margin-bottom: 3rem;
+        padding: 1rem;
+        height: max-content;
+
+    }
+    &__options{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-size: x-large;
+        font-weight: 500;
+        line-height: 160%;
+        color: whitesmoke;
+        // padding: 1rem;
+        width: 70%;
+        
+        
+    }
+    &__answers{
+        display: flex;
+        justify-content: center;
+        margin: 0.5rem;
+        background-color: rgb(121, 121, 117);
+        padding: 1rem;
+        border: 1px solid gray;
+    }
+
+
+
+}
