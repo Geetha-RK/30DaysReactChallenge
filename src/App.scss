@@ -7,3 +7,10 @@
   margin: 0;
   height:5rem;
 }
+.todo{
+  &__link{
+    text-decoration: none;
+    color: rgb(80, 55, 80);
+    font-size:smaller;
+  }
+}

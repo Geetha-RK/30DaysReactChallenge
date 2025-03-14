@@ -1,0 +1,25 @@
+.trivia{
+    height:150vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: radial-gradient(circle, rgb(255, 255, 255), rgb(226, 104, 128));
+
+    &__container{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        // margin-top: 1rem;
+        padding-bottom: 3rem;
+       
+
+    }
+   
+  
+
+
+}

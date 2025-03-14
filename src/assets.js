@@ -114,7 +114,22 @@ export const project = [
       description:'Create a note-taking app that allows adding, editing, and deleting notes.',
       Concepts: 'State management, CRUD operations.',
     },
+    {
+      day:'Day12',
+      title:'Expense Splitter',
+      description:'Split the total cost among multiple people.',
+      Concepts: 'state management, basic arithmetic operations.',
+    },
+    {
+      day:'Day13',
+      title:'Trivia Quiz App',
+      description:'Show multiple-choice questions and display the score after submission.',
+      Concepts: 'useState, conditional rendering, mapping data.',
+    },
   ];
+
+  
+
 
 
  
