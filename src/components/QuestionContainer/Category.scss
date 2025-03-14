@@ -1,5 +1,8 @@
 .category__container {
     margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
   .category__container h3 {
@@ -23,5 +26,45 @@
   
   .category__item:active {
     background-color: #d0d0d0;
+  }
+
+  .category{
+    &__boxes{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin: 3rem;
+      padding: 2rem;
+      width: 15rem;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      
+      backdrop-filter: blur(10px) saturate(94%);
+      -webkit-backdrop-filter: blur(10px) saturate(94%);
+      background-color: rgba(226, 71, 100, 0.58);
+      box-shadow: 0.5rem 0.5rem 0.5rem rgb(226, 71, 100);
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.125);
+    }
+    &__list{
+      list-style: none;
+      color: whitesmoke;
+      font-weight: 600;
+      font-size: medium;
+    }
+    &__container2{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      cursor: pointer;
+
+    }
+    &__title{
+      color: whitesmoke;
+      font-weight: 800;
+      font-size:larger;
+    }
   }
   

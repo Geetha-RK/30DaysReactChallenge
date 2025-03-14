@@ -11,18 +11,23 @@ const Category = ({ category,onSelectCategory }) => {
 
     const handleCategoryClick = (cat) => {
         onSelectCategory(cat);
-        navigate(`/Day13/category/${cat.name}`); 
+        console.log("selected category name:",cat)
+        navigate(`/Day13/category/${cat.id}`);  
     };
 
   return (
     <div className="category__container">
-            <h3>Select a Category</h3>
-            <ul>
-                {category.map((cat) => (
-                    <li key={cat.id} onClick={handleCategoryClick}>
-                        {cat.name}
-                    </li>
-                ))}
+            <h3 className='category__title'>Select a Category</h3>
+            <ul className='category__container2'>
+                {category.map((cat) => {
+                    return (
+                    <li className="category__list" key={cat.id} onClick={() => handleCategoryClick(cat)}>
+                    <div className='category__boxes'>
+                        {cat.name}  
+                    </div>
+                </li>
+                    )
+})}
             </ul>
         </div>
   )
