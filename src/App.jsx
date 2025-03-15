@@ -15,6 +15,7 @@ import Day11 from './pages/Day11/Day11'
 import Day12 from './pages/Day12/Day12'
 import Day13 from './pages/Day13/Day13'
 import CategoryQuestions from './pages/Day13/CategoryQuestions'
+import Day14 from './pages/Day14/Day14'
 
 function App() {
 
@@ -38,7 +39,7 @@ function App() {
           <Route path='/Day12' element={<Day12/>}></Route>
           <Route path='/Day13' element={<Day13/>}></Route>
           <Route path="/Day13/category/:categoryId" element={<CategoryQuestions />}></Route>
-
+          <Route path='/Day14' element={<Day14/>}></Route>
         </Routes>
       </div>
     </>

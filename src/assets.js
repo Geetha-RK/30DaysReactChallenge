@@ -126,7 +126,17 @@ export const project = [
       description:'Show multiple-choice questions and display the score after submission.',
       Concepts: 'useState, conditional rendering, mapping data.',
     },
+    {
+      day:'Day14',
+      title:'Contact List App',
+      description:'Build a list of contacts with their names, phone numbers, and email addresses.',
+      Concepts: 'CRUD operations, forms, lists.',
+    },
   ];
+
+  
+
+
 
   
 
